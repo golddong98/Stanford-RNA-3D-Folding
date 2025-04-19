@@ -1,1 +1,0 @@
-data/raw/stanford-rna-3d-folding.zip filter=lfs diff=lfs merge=lfs -text
