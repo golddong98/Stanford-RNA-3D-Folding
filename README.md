@@ -2,7 +2,7 @@
 
 ```
 # 할당 받은 서버 확인
-curl -O https://raw.githubusercontent.com/golddong98/infra-scripts/check_env.sh
+curl -O https://raw.githubusercontent.com/golddong98/Stanford-RNA-3D-Folding/main/infra-scripts/check_env.sh
 chmod +x check_env.sh
 ./check_env.sh
 
