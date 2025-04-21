@@ -1,3 +1,13 @@
+# 클라우드 서버 환경 만들기
+
+```
+# 할당 받은 서버 확인
+curl -O https://raw.githubusercontent.com/golddong98/infra-scripts/check_env.sh
+chmod +x check_env.sh
+./check_env.sh
+
+```
+
 # 🏆 Competition Project
 
 ## 시작하는법
