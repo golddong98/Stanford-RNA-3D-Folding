@@ -6,6 +6,16 @@ curl -O https://raw.githubusercontent.com/golddong98/Stanford-RNA-3D-Folding/mai
 chmod +x check_env.sh
 ./check_env.sh
 
+
+# Ansible 설치
+sudo apt update
+sudo apt install -y ansible
+
+
+# Ansible Playbook 실행 (setup_env.yml)
+ansible-playbook setup_env.yml
+
+
 ```
 
 # 🏆 Competition Project
