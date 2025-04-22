@@ -66,27 +66,6 @@ cat <<'EOF' > setup_env.yml
         name: python3-pip
         state: present
 
-    # sudo apt update
-    # sudo apt install -y docker.io
-    - name: Install Docker
-      apt:
-        name:
-          - docker.io
-          - docker-compose
-        state: present
-
-    - name: Enable and start Docker service
-      systemd: # 서비스 실행 systemctl start 같은것
-        name: docker
-        enabled: yes
-        state: started
-
-    - name: Add current user to docker group
-      user: # 유저 정보 설정 ex. usermod, groupadd 같은 것
-        name: "{{ lockup('env', 'USER') }}"
-        groups: docker
-        append: yes
-
     - name: Install Ansible (via pip)
       pip:
         name: ansible
